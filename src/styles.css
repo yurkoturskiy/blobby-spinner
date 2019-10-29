@@ -12,8 +12,16 @@
 }
 
 .spinner span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 16px;
+  /* outline: 1px solid red; */
   font-size: 0.875rem;
-  color: grey;
+  color: black;
 }
 
 .spinner svg {
@@ -22,16 +30,7 @@
 }
 
 .spinner path {
-  mix-blend-mode: multiply;
-  animation-name: spinner-appear;
-  animation-duration: 2s;
-}
-
-@keyframes spinner-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  stroke-width: 3;
+  fill: transparent;
+  /* mix-blend-mode: multiply; */
 }
