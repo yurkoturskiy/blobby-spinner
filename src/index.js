@@ -7,7 +7,7 @@ import "./styles.css";
 
 function App() {
   return (
-    <div>
+    <>
       <Spinner
         duration={13000}
         shiftStep={200}
@@ -21,7 +21,7 @@ function App() {
         lable={false}
       />
       <FooterCaption />
-    </div>
+    </>
   );
 }
 
