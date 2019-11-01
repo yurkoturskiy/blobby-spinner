@@ -44,9 +44,11 @@
 }
 .caption {
   position: absolute;
-  bottom: 12px;
-  right: 12px;
+  bottom: 8px;
+  left: 0;
+  right: 0;
   font-size: 0.875rem;
+  text-align: center;
   color: grey;
 }
 #heart {
