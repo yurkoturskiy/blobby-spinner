@@ -12,9 +12,9 @@ function App() {
         duration={13000}
         shiftStep={200}
         numOfKeyPaths={12}
-        numOfShapes={3}
+        numOfShapes={6}
         colors={["#3688FF", "#FF546C", "#22D163", "#3688FF"]}
-        contrast={0.8}
+        contrast={1}
         round={0.6}
         numOfPathSegments={6}
         type={"fill"}
