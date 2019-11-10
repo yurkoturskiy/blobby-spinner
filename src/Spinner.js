@@ -67,14 +67,14 @@ function Spinner(props) {
     paths.push(
       pathsVisibility[i] && (
         <path key={i} fill="#3688FF" opacity="1">
-          {/* <animate
+          <animate
             begin={props.shiftStep * i + "ms"}
             attributeName="opacity"
-            dur="200ms"
+            dur="100ms"
             repeatCount="1"
             from="0"
             to="1"
-          /> */}
+          />
           <animate
             begin={props.shiftStep * i + "ms"}
             attributeName="d"
@@ -85,24 +85,13 @@ function Spinner(props) {
             keySplines={keySplines}
             values={blob.dValues}
           />
-          {props.type === "fill" && (
-            <animate
-              begin={props.shiftStep * i + "ms"}
-              attributeName="fill"
-              values={animateColorValues}
-              dur={animateColorDuration}
-              repeatCount="indefinite"
-            />
-          )}
-          {props.type === "stroke" && (
-            <animate
-              begin={props.shiftStep * i + "ms"}
-              attributeName="stroke"
-              values={animateColorValues}
-              dur={animateColorDuration}
-              repeatCount="indefinite"
-            />
-          )}
+          <animate
+            begin={props.shiftStep * i + "ms"}
+            attributeName={props.type}
+            values={animateColorValues}
+            dur={animateColorDuration}
+            repeatCount="indefinite"
+          />
         </path>
       )
     );
