@@ -23,7 +23,7 @@ function Spinner(props) {
 
   const morphParams = {
     numOfKeyPaths: props.numOfKeyPaths,
-    loop: true
+    loop: "linear"
   };
   var keySplines = [];
   var keyTimes = [];
@@ -66,7 +66,7 @@ function Spinner(props) {
   for (let i = 0; i < props.numOfShapes; i++) {
     paths.push(
       pathsVisibility[i] && (
-        <path key={i} fill="#3688FF" opacity="1">
+        <path key={i} fill="#3688FF" opacity="1" d={blob.dValuesFrames[0]}>
           <animate
             begin={props.shiftStep * i + "ms"}
             attributeName="opacity"

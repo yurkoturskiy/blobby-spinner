@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "primitivo-svg": "0.1.0-alpha.0",
+    "primitivo-svg": "0.1.1-alpha.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1"
